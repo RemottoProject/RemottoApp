@@ -1,0 +1,38 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Theme.ReMotto" parent="Theme.Material3.DayNight">
+        <!-- Primary brand color. -->
+        <item name="colorPrimary">@color/dark_200</item>
+        <item name="colorPrimaryVariant">@color/dark_900</item>
+        <item name="colorOnPrimary">@color/black</item>
+        <!-- Secondary brand color. -->
+        <item name="colorSecondary">@color/teal_200</item>
+        <item name="colorSecondaryVariant">@color/teal_200</item>
+        <item name="colorOnSecondary">@color/dark_900</item>
+        <!-- Status bar color. -->
+        <item name="android:statusBarColor" tools:targetApi="l">?attr/colorSurface</item>
+        <!-- Customize your theme here. -->
+        <item name="strokeColor">@color/dark_200</item>
+        <item name="tStrokeWidth">1dp</item>
+        <item name="buttonBackground">@color/translucentWhite</item>
+        <item name="touchpadBackground">@color/translucentWhite_100</item>
+    </style>
+
+    <style name="Theme.NoActionBar" parent="Theme.Material3.DayNight.NoActionBar">
+        <!-- Primary brand color. -->
+        <item name="colorPrimary">@color/dark_200</item>
+        <item name="colorPrimaryVariant">@color/dark_900</item>
+        <item name="colorOnPrimary">@color/dark_900</item>
+        <!-- Secondary brand color. -->
+        <item name="colorSecondary">@color/teal_200</item>
+        <item name="colorSecondaryVariant">@color/teal_200</item>
+        <item name="colorOnSecondary">@color/black</item>
+        <!-- Status bar color. -->
+        <item name="android:statusBarColor" tools:targetApi="l">?attr/colorSurface</item>
+        <!-- Customize your theme here. -->
+        <item name="strokeColor">@color/dark_200</item>
+        <item name="tStrokeWidth">1dp</item>
+        <item name="buttonBackground">@color/translucentWhite</item>
+        <item name="touchpadBackground">@color/translucentWhite_100</item>
+    </style>
+</resources>

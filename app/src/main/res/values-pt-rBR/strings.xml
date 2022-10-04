@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Remotto</string>
+    <string name="power_off">Desligar</string>
+    <string name="turn_on">Ligar</string>
+    <string name="stop">Parar</string>
+    <string name="mute">Mutar</string>
+    <string name="settings">Configurações</string>
+    <string name="more">Mais</string>
+    <string name="keyboard">Teclado</string>
+    <string name="copy">Copiar</string>
+    <string name="paste">Colar</string>
+    <string name="backspace">Apagar</string>
+    <string name="text">Texto</string>
+    <string name="type_your_text">Digite seu texto</string>
+    <string name="zoom_out">Menos zoom</string>
+    <string name="zoom_in">Mais zoom</string>
+    <string name="server_state">Estado do servidor:</string>
+    <string name="unknown">Desconhecido</string>
+    <string name="device_name">Nome do dispositvo</string>
+    <string name="ip_address">Endereço IP</string>
+    <string name="server_ip_address">Endereço IP do Servidor</string>
+    <string name="mac_address">Endereço MAC</string>
+    <string name="server_mac_address">Endereço MAC do Servidor</string>
+    <string name="scan_qr_code">Escanear Código QR</string>
+    <string name="save">Salvar</string>
+    <string name="device_name_helper_text">O nome que vai aparecer na lista do servidor</string>
+    <string name="on">Ligado</string>
+    <string name="off">Desligado</string>
+    <string name="preferences_saved">Preferências salvas</string>
+    <string name="device_name_empty_error">O nome do dispositivo não foi preenchido</string>
+    <string name="device_name_invalid_error">Nome inválido</string>
+    <string name="ip_empty_error">Você não digitou o IP</string>
+    <string name="ip_invalid_error">IP inválido</string>
+    <string name="mac_empty_error">Você não digitou o MAC</string>
+    <string name="mac_invalid_error">MAC inválido</string>
+    <string name="camera_permission_denied_error">O acesso a câmera foi negado. Digite o IP e o MAC manualmente.</string>
+    <string name="qr_scan_generic_error">Ocorreu um erro. Tente digitar manualmente.</string>
+    <string name="pairing_info">Pareamento</string>
+    <string name="about">Sobre</string>
+    <string name="night_mode_and_brightness">Modo noturno e Brilho</string>
+</resources>

@@ -1,0 +1,225 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:keepScreenOn="true"
+        tools:context=".ui.MainActivity">
+
+    <Button
+        android:id="@+id/btnPowerOff"
+        style="@style/Widget.Material3.Button.OutlinedButton.Icon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="64dp"
+        android:text="@string/power_off"
+        app:icon="@drawable/round_power_off_24"
+        app:layout_constraintEnd_toStartOf="@+id/btnTurnOn"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btnTurnOn"
+        style="@style/Widget.Material3.Button.OutlinedButton.Icon"
+        android:text="@string/turn_on"
+        app:icon="@drawable/round_power_settings_new_24"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/btnPowerOff" app:layout_constraintTop_toTopOf="@+id/btnPowerOff"
+        app:layout_constraintBottom_toBottomOf="@+id/btnPowerOff"/>
+
+    <xyz.uchiha.remotto.ui.components.RoundIconButton
+        android:id="@+id/btnUp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        app:icon_RIB="@drawable/round_keyboard_arrow_up_black_36"
+        app:layout_constraintEnd_toEndOf="@+id/btnOk"
+        app:layout_constraintStart_toStartOf="@+id/btnOk"
+        app:layout_constraintTop_toBottomOf="@+id/btnPowerOff" />
+
+    <Button
+        android:id="@+id/btnOk"
+        style="@style/Widget.Material3.Button.IconButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="6dp"
+        android:padding="24dp"
+        app:iconSize="32dp"
+        app:icon="@drawable/round_done_black_36"
+        app:iconTint="?colorPrimary"
+        app:rippleColor="?colorPrimaryVariant"
+        app:strokeColor="?strokeColor"
+        app:strokeWidth="1dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnUp" />
+
+    <xyz.uchiha.remotto.ui.components.RoundIconButton
+        android:id="@+id/btnLeft"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="6dp"
+        app:icon_RIB="@drawable/round_keyboard_arrow_left_black_36"
+        app:layout_constraintBottom_toBottomOf="@+id/btnOk"
+        app:layout_constraintEnd_toStartOf="@+id/btnOk"
+        app:layout_constraintTop_toTopOf="@+id/btnOk" />
+
+    <xyz.uchiha.remotto.ui.components.RoundIconButton
+        android:id="@+id/btnRight"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="6dp"
+        app:icon_RIB="@drawable/round_keyboard_arrow_right_black_36"
+        app:layout_constraintBottom_toBottomOf="@+id/btnOk"
+        app:layout_constraintStart_toEndOf="@+id/btnOk"
+        app:layout_constraintTop_toTopOf="@+id/btnOk" />
+
+    <xyz.uchiha.remotto.ui.components.RoundIconButton
+        android:id="@+id/btnDown"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="6dp"
+        app:icon_RIB="@drawable/round_keyboard_arrow_down_black_36"
+        app:layout_constraintEnd_toEndOf="@+id/btnOk"
+        app:layout_constraintStart_toStartOf="@+id/btnOk"
+        app:layout_constraintTop_toBottomOf="@+id/btnOk" />
+
+    <xyz.uchiha.remotto.ui.components.RoundIconButton
+        android:id="@+id/btnVolUp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="32dp"
+        app:icon_RIB="@drawable/round_volume_up_black_36"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnRight" />
+
+    <xyz.uchiha.remotto.ui.components.RoundIconButton
+        android:id="@+id/btnVolDown"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        app:icon_RIB="@drawable/round_volume_down_black_36"
+        app:layout_constraintEnd_toEndOf="@+id/btnVolUp"
+        app:layout_constraintStart_toStartOf="@+id/btnVolUp"
+        app:layout_constraintTop_toBottomOf="@+id/btnVolUp" />
+
+    <xyz.uchiha.remotto.ui.components.RoundIconButton
+        android:id="@+id/btnNext"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="32dp"
+        app:icon_RIB="@drawable/round_skip_next_black_36"
+        app:layout_constraintBottom_toTopOf="@+id/btnPrevious"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnLeft" />
+
+    <xyz.uchiha.remotto.ui.components.RoundIconButton
+        android:id="@+id/btnPrevious"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        app:icon_RIB="@drawable/round_skip_previous_black_36"
+        app:layout_constraintEnd_toEndOf="@+id/btnNext"
+        app:layout_constraintStart_toStartOf="@+id/btnNext"
+        app:layout_constraintTop_toBottomOf="@+id/btnNext" />
+
+    <Button
+        android:id="@+id/btnPlay"
+        style="@style/Widget.Material3.Button.OutlinedButton.Icon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="@string/play"
+        app:icon="@drawable/round_play_arrow_24"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.501"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnVolDown" />
+
+    <Button
+        android:id="@+id/btnStop"
+        style="@style/Widget.Material3.Button.OutlinedButton.Icon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/stop"
+        app:icon="@drawable/round_stop_24"
+        app:layout_constraintEnd_toStartOf="@+id/btnPlay" android:layout_marginEnd="12dp"
+        app:layout_constraintBottom_toBottomOf="@+id/btnPlay" app:layout_constraintTop_toTopOf="@+id/btnPlay"/>
+
+    <Button
+        android:id="@+id/btnMute"
+        style="@style/Widget.Material3.Button.OutlinedButton.Icon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/mute"
+        app:icon="@drawable/round_volume_mute_24"
+        app:layout_constraintStart_toEndOf="@+id/btnPlay" android:layout_marginStart="12dp"
+        app:layout_constraintBottom_toBottomOf="@+id/btnPlay" app:layout_constraintTop_toTopOf="@+id/btnPlay"/>
+
+    <Button
+        android:id="@+id/btnSettings"
+        style="@style/Widget.Material3.Button.Icon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:text="@string/settings"
+        app:icon="@drawable/round_settings_24"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/btnMore"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnKeyboard" />
+
+    <Button
+        android:id="@+id/btnMore"
+        style="@style/Widget.Material3.Button.Icon"
+        android:layout_width="118dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:text="@string/more"
+        app:icon="@drawable/round_keyboard_arrow_up_24"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/btnSettings"
+        app:layout_constraintTop_toBottomOf="@+id/btnKeyboard" />
+
+    <xyz.uchiha.remotto.ui.components.RoundIconButton
+        android:id="@+id/btnBack"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:icon_RIB="@drawable/round_arrow_back_black_36"
+        app:layout_constraintBottom_toTopOf="@+id/btnPlay"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnDown" />
+
+    <Button
+        android:id="@+id/btnKeyboard"
+        style="@style/Widget.Material3.Button.ElevatedButton.Icon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:text="@string/keyboard"
+        app:icon="@drawable/round_keyboard_24"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/btnMouse"
+        app:layout_constraintTop_toBottomOf="@+id/btnMute" />
+
+    <Button
+        android:id="@+id/btnMouse"
+        style="@style/Widget.Material3.Button.ElevatedButton.Icon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:text="@string/mouse"
+        app:icon="@drawable/round_mouse_24"
+        app:layout_constraintEnd_toStartOf="@+id/btnKeyboard"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnStop" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

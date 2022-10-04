@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <attr name="tStrokeWidth" format="dimension" />
+    <attr name="buttonBackground" format="color" />
+    <attr name="touchpadBackground" format="color" />
+
+    <declare-styleable name="RoundIconButton">
+        <attr name="icon_RIB" format="reference" />
+    </declare-styleable>
+</resources>
