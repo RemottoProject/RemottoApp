@@ -33,8 +33,8 @@ class SettingsActivity : AppCompatActivity() {
         supportActionBar?.setDisplayShowHomeEnabled(true)
 
         binding.layoutPairing.setOnClickListener { getResult.launch(Intent(this, PairingActivity::class.java)) }
-        binding.layoutVisuals.setOnClickListener { Toast.makeText(this, "Hoje não, hoje não...", Toast.LENGTH_SHORT).show() }
-        binding.layoutAbout.setOnClickListener { Toast.makeText(this, "Nunca desista", Toast.LENGTH_SHORT).show() }
+        binding.layoutVisuals.setOnClickListener { Toast.makeText(this, "Disabled for now", Toast.LENGTH_SHORT).show() }
+        binding.layoutAbout.setOnClickListener { Toast.makeText(this, "Disabled for now", Toast.LENGTH_SHORT).show() }
     }
 
     private val getResult = registerForActivityResult(ActivityResultContracts.StartActivityForResult()) {
